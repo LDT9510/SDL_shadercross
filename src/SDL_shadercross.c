@@ -462,6 +462,7 @@ static void *SDL_ShaderCross_INTERNAL_CompileUsingDXC(
         } else {
             // https://github.com/microsoft/DirectXShaderCompiler/blob/main/docs/SourceLevelDebuggingHLSL.rst#command-line-options
             args[argCount++] = (LPCWSTR)L"-Zi";
+            args[argCount++] = (LPCWSTR)L"-Qembed_debug";
         }
     }
 
